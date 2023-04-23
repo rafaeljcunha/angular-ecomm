@@ -1,0 +1,12 @@
+<mat-toolbar class="header mat-elevation-z4">
+  <div>
+    <span fxShow><span class="ambar-span">E</span>-comm <span
+        class="ambar-span">A</span>ngular</span>
+    <app-navbar></app-navbar>
+  </div>
+
+  <a routerLink="/cart">
+    <mat-icon
+      matBadge="{{itemsQuantity}}" matBadgeColor="warn">shopping_cart</mat-icon>
+  </a>
+</mat-toolbar>

@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  height: 80px;
+  background-color: var(--primaryColor);
+  justify-content: space-between;
+  padding: 0px 32px;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header > div > span {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.ambar-span {
+  color: var(--secondaryColor);
+}
+
+.header > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cart {
+  color: #fff;
+  font-size: 2.5rem;
+}

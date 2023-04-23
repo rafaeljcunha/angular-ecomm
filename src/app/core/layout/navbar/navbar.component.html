@@ -1,0 +1,8 @@
+<nav mat-tab-nav-bar class="nav-item" color="#fff" backgroundColor="primary">
+  <a mat-tab-link *ngFor="let navLink of navLinks"
+    (click)="onClickNavItem(navLink)"
+    [active]="getActiveLink(navLink)"
+    [routerLink]="navLink.routerLink" [id]="navLink.routerLink">
+    {{navLink.title}}
+  </a>
+</nav>
