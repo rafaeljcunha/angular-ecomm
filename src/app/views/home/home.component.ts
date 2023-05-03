@@ -26,5 +26,4 @@ export class HomeComponent {
         'Aqui você poderá criar, exclui, atualizar e visulizar produtos, adicionar um produto ao carrinho, excluir um produto contido no carrinho, aumentar a quantidade do produto contido no carrinho, adicionar, excluir e atualizar um endereço, e com isso, selecionar um endereço no checkout e depois adicionar e excluir um método de pagamento, concluir o pedido e por fim, visualizar o pedido criado.',
     },
   ];
-  constructor(private footerService: FooterService) {}
 }

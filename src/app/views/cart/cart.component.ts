@@ -1,10 +1,4 @@
-import {
-  Component,
-  OnChanges,
-  OnDestroy,
-  OnInit,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CartService } from 'src/app/core/services/cart/cart.service';
 import { FooterService } from 'src/app/core/services/footer/footer.service';
 import { HeaderService } from 'src/app/core/services/header/header.service';

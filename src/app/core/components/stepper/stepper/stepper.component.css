@@ -1,0 +1,10 @@
+.stepper-button {
+  display: flex;
+  margin-top: 48px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.stepper-button-previous {
+  margin-right: 16px;
+}

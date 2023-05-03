@@ -1,8 +1,7 @@
-<div style="display: flex;">
-
-  <app-cart-list class="cart-wrapper"
+<div class="cart-container">
+  <app-cart-list class="cart-list"
     fxLayout="row wrap"
     fxLayoutGap="16px grid" [cartItems]="cartItems">
   </app-cart-list>
-  <app-summary [selectedItems]="cartItems" style="margin-left: 24px;"></app-summary>
+  <app-summary [selectedItems]="cartItems" class="cart-summary"></app-summary>
 </div>

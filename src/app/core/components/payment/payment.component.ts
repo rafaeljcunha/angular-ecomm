@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PaymentsService } from 'src/app/core/services/payments/payments.service';
-import { SummaryService } from 'src/app/core/services/summary/summary.service';
 import { Payment } from 'src/app/core/types/payments.type';
 import { CheckoutService } from '../../services/checkout/checkout.service';
 
@@ -10,7 +9,7 @@ import { CheckoutService } from '../../services/checkout/checkout.service';
   styleUrls: ['./payment.component.css'],
 })
 export class PaymentComponent implements OnInit {
-  payments = [] as Payment[];
+  public payments: Payment[] = [] as Payment[];
   public selectedPayment: Payment = {} as Payment;
 
   constructor(

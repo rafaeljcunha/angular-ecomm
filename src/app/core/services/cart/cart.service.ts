@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Cart, CartEvents } from '../../types/cart.type';
+import { Cart } from '../../types/cart.type';
 import { Product } from '../../types/products.type';
-import { DateAdapter } from '@angular/material/core';
 
 @Injectable({
   providedIn: 'root',

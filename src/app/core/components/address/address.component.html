@@ -1,14 +1,11 @@
-
-<div style="display: flex; flex: 1; width: 100%;
-  justify-content: space-between;">
-  <mat-card style="padding: 24px; box-shadow: none; width: 100%;">
-    <mat-card-title style="margin-bottom: 24px;">Selecione o endereço de entrega</mat-card-title>
+<div class="address-container">
+  <mat-card class="mat-card-container">
+    <mat-card-title class="mat-card-title">Selecione o endereço de entrega</mat-card-title>
     <div *ngFor="let address of addresses">
-      <mat-card style="flex-direction: row; align-items: center; margin-bottom:
-        16px; justify-content: space-between;">
-        <div style="margin-right: 16px;">
-          <mat-card-title style="padding: 8px 16px 0px 16px;">{{address.alias}}</mat-card-title>
-          <mat-card-subtitle style="padding: 0px 16px 8px 16px">{{address.address}},
+      <mat-card class="mat-card-content">
+        <div class="mat-card-group">
+          <mat-card-title class="mat-card-group-title">{{address.alias}}</mat-card-title>
+          <mat-card-subtitle class="mat-card-group-subtitle">{{address.address}},
             {{address.number}}, {{address.district}}, {{address.city}},
             {{address.zipcode}}</mat-card-subtitle>
         </div>

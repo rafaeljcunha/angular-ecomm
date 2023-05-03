@@ -1,48 +1,43 @@
-<mat-card style="padding: 4px">
-  <mat-card-title style="margin: 16px">Informações do pedido</mat-card-title>
-  <mat-card-content style="width: 300px;">
+<mat-card class="mat-card-spacing">
+  <mat-card-title class="mat-card-title">Informações do pedido</mat-card-title>
+  <mat-card-content class="mat-card-content">
 
-    <p style="font-size: 0.9rem; font-weight: 600; margin-top: 8px;">Pedido</p>
+    <p class="mat-card-subtitle">Pedido</p>
     <div *ngFor="let item of selectedItems">
       <mat-card-subtitle>{{item.title}} -
-        <span style="color: #a1a1a1">{{item.price *
+        <span class="mat-card-list-item">{{item.price *
           item.quantity |
           currency: "BRL"}}</span></mat-card-subtitle>
     </div>
 
     <div *ngIf="selectedAddress?.address">
-      <div style="display:flex; flex: 1; border-top: 1px solid black;
-        margin-top:
-        16px; margin-bottom: 16px;"></div>
-      <p style="font-size: 0.9rem; font-weight: 600; margin-top: 8px;">Endereço</p>
+      <div class="mat-card-divider"></div>
+      <p class="mat-card-subtitle">Endereço</p>
       <mat-card-subtitle *ngIf="selectedAddress?.address">{{selectedAddress?.alias}}
-        - <span style="color: #a1a1a1">{{selectedAddress?.address}},
+        - <span class="mat-card-list-item">{{selectedAddress?.address}},
           {{selectedAddress?.number}}, {{selectedAddress?.district}},
           {{selectedAddress?.city}},
           {{selectedAddress?.zipcode}}</span></mat-card-subtitle>
     </div>
 
-    <div *ngIf="selectedPayment.title">
-      <div style="display:flex; flex: 1; border-top: 1px solid black;
-        margin-top:
-        16px; margin-bottom: 16px;"></div>
-      <p style="font-size: 0.9rem; font-weight: 600; margin-top: 8px;">Pagamento</p>
-      <mat-card-subtitle>{{selectedPayment.title}}</mat-card-subtitle>
+    <div *ngIf="selectedPayment?.title">
+      <div class="mat-card-divider"></div>
+      <p class="mat-card-subtitle">Pagamento</p>
+      <mat-card-subtitle>{{selectedPayment?.title}}</mat-card-subtitle>
     </div>
 
-    <div style="display:flex; flex: 1; border-top: 1px solid black; margin-top:
-      16px; margin-bottom: 16px;"></div>
-    <p style="font-size: 0.9rem; font-weight: 600; margin-top: 8px;">Resumo dos
+    <div class="mat-card-divider"></div>
+    <p class="mat-card-subtitle">Resumo dos
       valores</p>
-    <mat-card-subtitle>Subtotal - <span style="color: #a1a1a1">{{cartSubTotalPrice
+    <mat-card-subtitle>Subtotal - <span class="mat-card-list-item">{{cartSubTotalPrice
         | currency: "BRL"}}</span>
     </mat-card-subtitle>
     <mat-card-subtitle *ngIf="selectedAddress?.address">Frete - <span
-        style="color:
-        #a1a1a1">{{cartDeliveryPrice |
+        class="mat-card-list-item">{{cartDeliveryPrice |
         currency: "BRL"}}</span>
     </mat-card-subtitle>
-    <mat-card-subtitle>Total - <span style="color: #a1a1a1">{{cartTotalPrice |
+    <mat-card-subtitle>Total - <span class="mat-card-list-item">{{cartTotalPrice
+        |
         currency: "BRL"}}</span>
     </mat-card-subtitle>
   </mat-card-content>

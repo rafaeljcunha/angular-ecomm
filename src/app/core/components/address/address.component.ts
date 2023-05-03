@@ -1,8 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AddressService } from 'src/app/core/services/address/address.service';
-import { CartService } from 'src/app/core/services/cart/cart.service';
-import { FooterService } from 'src/app/core/services/footer/footer.service';
-import { SummaryService } from 'src/app/core/services/summary/summary.service';
 import { Address } from 'src/app/core/types/address.type';
 import { CheckoutService } from '../../services/checkout/checkout.service';
 

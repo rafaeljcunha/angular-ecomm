@@ -1,7 +1,6 @@
 import { CartService } from 'src/app/core/services/cart/cart.service';
 import { Cart, CartEvents } from './../../../types/cart.type';
 import { Component, Input, OnInit } from '@angular/core';
-import { HeaderService } from 'src/app/core/services/header/header.service';
 
 @Component({
   selector: 'app-cart-card',
@@ -14,10 +13,7 @@ export class CartCardComponent implements OnInit {
   public productQuantity = 0;
   totalItems = 0;
 
-  constructor(
-    private cartService: CartService,
-    private headerService: HeaderService
-  ) {}
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
     this.itemPrice = this.product.price * this.product.quantity;

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/core/services/cart/cart.service';
 import { CheckoutService } from 'src/app/core/services/checkout/checkout.service';
-import { SummaryService } from 'src/app/core/services/summary/summary.service';
 import { Address } from 'src/app/core/types/address.type';
 import { Cart } from 'src/app/core/types/cart.type';
 import { Payment } from 'src/app/core/types/payments.type';

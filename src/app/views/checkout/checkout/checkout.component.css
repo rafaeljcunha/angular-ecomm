@@ -1,0 +1,9 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stepper-container {
+  width: 100%;
+  margin-right: 48px;
+}

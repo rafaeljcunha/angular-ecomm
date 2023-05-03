@@ -1,3 +1,10 @@
-.cart-wrapper {
+.cart-container {
+  display: flex;
+}
+.cart-list {
   padding-bottom: 64px;
+}
+
+.cart-summary {
+  margin-left: 24px;
 }
