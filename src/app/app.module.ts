@@ -17,6 +17,8 @@ import { NavbarComponent } from './core/layout/navbar/navbar.component';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatStepperModule } from '@angular/material/stepper';
 import { HttpClientModule } from '@angular/common/http';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
@@ -29,6 +31,15 @@ import { HomeCardListComponent } from './core/components/home/home-card-list/hom
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductListComponent } from './core/components/products/product-list/product-list.component';
 import { CartCardComponent } from './core/components/cart/cart-card/cart-card.component';
+import { CartListComponent } from './core/components/cart/cart-list/cart-list.component';
+import { OrdersComponent } from './views/orders/orders/orders.component';
+import { OrderComponent } from './views/order/order/order.component';
+import { SummaryComponent } from './core/components/summary/summary/summary.component';
+import { StepperComponent } from './core/components/stepper/stepper/stepper.component';
+import { CheckoutComponent } from './views/checkout/checkout/checkout.component';
+import { AddressComponent } from './core/components/address/address.component';
+import { PaymentComponent } from './core/components/payment/payment.component';
+import { ConfirmationComponent } from './core/components/confirmation/confirmation.component';
 
 registerLocaleData(localePt);
 
@@ -46,6 +57,15 @@ registerLocaleData(localePt);
     HomeCardListComponent,
     ProductListComponent,
     CartCardComponent,
+    CartListComponent,
+    AddressComponent,
+    PaymentComponent,
+    ConfirmationComponent,
+    OrdersComponent,
+    OrderComponent,
+    SummaryComponent,
+    StepperComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +82,8 @@ registerLocaleData(localePt);
     MatButtonModule,
     MatIconModule,
     MatBadgeModule,
+    MatRadioModule,
+    MatStepperModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent],

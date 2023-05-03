@@ -4,4 +4,9 @@ export type Cart = {
   price: number;
   image: string;
   quantity: number;
+  addedAt?: Date;
 };
+
+export enum CartEvents {
+  UPDATE_QUANTITY = 'update_quantity',
+}

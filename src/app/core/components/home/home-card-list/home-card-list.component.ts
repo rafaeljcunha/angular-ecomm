@@ -6,10 +6,6 @@ import { HomeCard } from '../../../types/home-card.type';
   templateUrl: './home-card-list.component.html',
   styleUrls: ['./home-card-list.component.css'],
 })
-export class HomeCardListComponent implements OnInit {
+export class HomeCardListComponent {
   @Input() homeInfos = [] as HomeCard[];
-
-  ngOnInit(): void {
-    console.log(this.homeInfos);
-  }
 }

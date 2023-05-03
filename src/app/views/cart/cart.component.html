@@ -1,3 +1,8 @@
-<div *ngFor="let cartItem of cartItems">
-  <p>{{cartItem.title}} - {{cartItem.quantity}}</p>
+<div style="display: flex;">
+
+  <app-cart-list class="cart-wrapper"
+    fxLayout="row wrap"
+    fxLayoutGap="16px grid" [cartItems]="cartItems">
+  </app-cart-list>
+  <app-summary [selectedItems]="cartItems" style="margin-left: 24px;"></app-summary>
 </div>

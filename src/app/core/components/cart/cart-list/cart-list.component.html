@@ -1,0 +1,12 @@
+<div
+  fxFlex="50%"
+  fxFlex.sm="100%"
+  fxFlex.md="50%"
+  fxFlex.xs="100%"
+  style="max-width: 66%;"
+  *ngFor="let
+  cartItem
+  of cartItems">
+  <app-cart-card
+    [product]="cartItem"></app-cart-card>
+</div>

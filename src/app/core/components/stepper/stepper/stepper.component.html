@@ -1,0 +1,25 @@
+<mat-stepper linear #stepper>
+  <mat-step label="Endereço de entrega">
+    <app-address></app-address>
+    <div style="display:flex; margin-top: 48px; width: 100%;
+      justify-content: flex-end;">
+      <button mat-raised-button color="primary" matStepperNext>Próximo</button>
+    </div>
+  </mat-step>
+  <mat-step label="Forma de pagamento">
+    <app-payment></app-payment>
+    <div style="display:flex; margin-top: 48px; width: 100%;
+      justify-content: flex-end;">
+      <button style="margin-right: 16px;" mat-raised-button color="warn"
+        matStepperPrevious>Voltar</button>
+      <button mat-raised-button color="primary" matStepperNext>Próximo</button>
+    </div>
+  </mat-step>
+  <mat-step label="Confirmação do pedido">
+    <app-confirmation></app-confirmation>
+    <div style="display:flex; margin-top: 48px; width: 100%;
+      justify-content: flex-end;">
+      <button mat-raised-button color="primary" matStepperNext>Finalizar</button>
+    </div>
+  </mat-step>
+</mat-stepper>

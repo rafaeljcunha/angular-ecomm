@@ -1,5 +1,11 @@
 <mat-toolbar class="footer mat-elevation-z4">
   <span>E-commerce desenvolvido para estudos com Angular 15</span>
-  <span>Desenvolvido por <strong><a [href]="linkedIn" target="_blank">Rafael
+  <span [hidden]="shouldRenderCheckoutButton">Desenvolvido por <strong><a
+        [href]="linkedIn" target="_blank">Rafael
         Cunha</a></strong></span>
+  <button mat-raised-button *ngIf="shouldRenderCheckoutButton" color="primary"
+    routerLink="/checkout">Ir
+    para o
+    endereço
+  </button>
 </mat-toolbar>
